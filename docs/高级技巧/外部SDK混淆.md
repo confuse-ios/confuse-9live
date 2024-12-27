@@ -18,6 +18,10 @@ sort: 4
 4. 按需开启混淆选项
 > 如果都不开启，就会执行内置的一些符号的替换操作，主要是为了配合运行时BUG修复(主要是配合自定义资源混淆功能)
 
+## 截图
+>
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-36.png" width="60%">
+
 ## 混淆选项说明
 - c symbol confuse（C符号混淆开启)
 > 如果被识别成一般的c符号格式，就会被混淆
@@ -34,6 +38,3 @@ sort: 4
 - swift symbol confuse（Swift符号混淆开启)
 > 如果被识别成一般的swift符号格式，就会被混淆，对Objc Meta Data也有效
 > 
-
->
-<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-36.png" width="60%">

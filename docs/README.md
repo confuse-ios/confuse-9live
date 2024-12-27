@@ -47,21 +47,21 @@
 | 产品文档 | 有 | 有 |
 
 ## 工具原理
-<img src="https://outtable.github.io/9live/assets/images/snapshots/snapshot-25.jpeg" width="80%">
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-25.jpeg" width="80%">
 
 ## 部分截图
 
-<img src="https://outtable.github.io/9live/assets/images/snapshots/snapshot-24.png" width="80%">
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-24.png" width="80%">
 
-<img src="https://outtable.github.io/9live/assets/images/snapshots/snapshot-23.png" width="80%">
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-23.png" width="80%">
 
-<img src="https://outtable.github.io/9live/assets/images/snapshots/snapshot-22.png" width="80%">
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-22.png" width="80%">
 
-<img src="https://outtable.github.io/9live/assets/images/snapshots/snapshot-21.png" width="80%">
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-21.png" width="80%">
 
-<img src="https://outtable.github.io/9live/assets/images/snapshots/snapshot-20.png" width="80%">
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-20.png" width="80%">
 
-<img src="https://outtable.github.io/9live/assets/images/snapshots/snapshot-31.png" width="80%">
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-31.png" width="80%">
 
 ## 如何获取工具？
 请在 **Products** 目录下下载 **beta1.5/crab-orange-1.5.zip**
