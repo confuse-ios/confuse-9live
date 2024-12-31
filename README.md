@@ -76,3 +76,6 @@
 
 ## 购买/续费商业合作请直接联系
 **303968748@qq.com**
+
+## 微信请扫描下方二维码 ###
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/wechart.png" width="40%">
