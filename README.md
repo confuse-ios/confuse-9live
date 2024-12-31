@@ -37,19 +37,19 @@
 
 | 功能/服务 | 免费版 | 收费版 |
 |-----|-----|-----|
-| c语言 | 支持 | 支 持 |
-| c++ 语言混淆 | 支 持 | 支 持 |
-| objc语言混淆 | 支 持 | 支 持 |
-| swift语言混淆 | 支 持 | 支 持 |
-| dart语言混淆 | 支 持 | 支 持 |
-| dSYM文件混淆 | 无 | 有 |
-| 编译加速 | 无 |有 |
-| 技术支持 | 无 | 有 |
-| 新手引导 | 有 | 有 |
-| ipa静态分析工具| 无 | 有 |
-| 外部SDK存档混淆 | 有 | 有 |
-| AppStore上包支持 | 无 | 有 |
-| 产品文档 | 有 | 有 |
+| &nbsp;c 语言混淆&nbsp; | &nbsp;支 持&nbsp; | &nbsp;支 持&nbsp; |
+| &nbsp;c++ 语言混淆&nbsp; | &nbsp;支 持&nbsp; | &nbsp;支 持 |
+| &nbsp;objc 语言混淆&nbsp; | &nbsp;支 持&nbsp; | &nbsp;支 持&nbsp; |
+| &nbsp;swift 语言混淆&nbsp; | &nbsp;支 持&nbsp; | &nbsp;支 持&nbsp; |
+| &nbsp;dart 语言混淆&nbsp; | &nbsp;支 持&nbsp; | &nbsp;支 持&nbsp; |
+| &nbsp;dSYM 文件混淆&nbsp; | &nbsp;无&nbsp; | &nbsp;有&nbsp; |
+| &nbsp;编 译 加 速&nbsp; | &nbsp;无&nbsp; |&nbsp;有&nbsp; |
+| &nbsp;技 术 支 持&nbsp; | &nbsp;无&nbsp; | &nbsp;有&nbsp; |
+| &nbsp;新 手 引 导&nbsp; | &nbsp;有&nbsp; | &nbsp;有&nbsp; |
+| &nbsp;马甲对比分析工具&nbsp;| &nbsp;无&nbsp; | &nbsp;有&nbsp; |
+| &nbsp;外部SDK存档混淆&nbsp; | &nbsp;有&nbsp; | &nbsp;有&nbsp; |
+| &nbsp;AppStore上包支持&nbsp; | &nbsp;无&nbsp; | &nbsp;有&nbsp; |
+| &nbsp;产 品 文 档&nbsp; | &nbsp;有&nbsp; | &nbsp;有&nbsp; |
 
 ## 工具原理
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-25.jpeg" width="80%">
