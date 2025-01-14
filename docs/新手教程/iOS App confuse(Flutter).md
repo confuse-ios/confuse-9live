@@ -1,8 +1,8 @@
 ---
-sort: 6
+sort: 7
 ---
-# iOS 应用混淆(Swift)
-**当前例子是为了演示swift语言开发的应用的混淆，其他语言暂不适用。**
+# iOS 应用混淆(Flutter)
+**当前例子是为了演示dart语言开发的Flutter应用的混淆。**
 
 ## 要运行本示例的要求
 - 安装了Cocos Pods(你工程用到了才用装)
@@ -22,11 +22,13 @@ sort: 6
 ## 创建工程
 1. 解压`Products.zip`，一般都会包含三个文件后缀分别是 `.listenkey` 、 `.dat` 、`.framework`
 
-2. 在工程目录 `~/Desktop/WNXHuntForCity` 下 建立一个`COSDK`目录，把我们给您的`Products/COSDK.framework`和`Products/**.dat`拖动进去
+2. 在工程目录 `~/Desktop/Runner` 下 建立一个`COSDK`目录，把我们给您的`Products/COSDK.framework`和`Products/**.dat`拖动进去
 
-3. 然后执行终端命令 `cd ~/Desktop/WNXHuntForCity`下，执行  `pod install --no-repo-update` (用了cocospods的，请执行一次)
+3. 然后执行终端命令 `cd ~/Desktop/Runner`下，执行  `flutter pub get`
 
-4. xcode打开 `~/Desktop/WNXHuntForCity.xcworkspace` 文件，把`COSDK`目录加入到工程里面 (实际的COSDK.framework名称跟图片可能不一致)
+4. 然后执行终端命令  `pod install` (flutter 基本都用了cocospods的，请执行一次)
+
+5. xcode打开 `~/Desktop/Runner.xcworkspace` 文件，把`COSDK`目录加入到工程里面 (实际的COSDK.framework名称跟图片可能不一致)
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-1.png" width="60%">
 >
@@ -34,7 +36,7 @@ sort: 6
 xcode16及以上工程，请确保 `Build Settings` 中的 `Copy Bundle Resource` 中加入了 `.dat` 文件
 ```
 
-5. 修改一下`WNXHuntForCity.xcproject` 的 `bundle id` 改为我们给了您注册文件的那个 `bundle id`
+6. 修改一下`Runner.xcproject` 的 `bundle id` 改为我们给了您注册文件的那个 `bundle id`
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-2.png" width="90%">
 
@@ -45,25 +47,22 @@ xcode16及以上工程，请确保 `Build Settings` 中的 `Copy Bundle Resource
 
 2. 点击【注册码】按钮，导入我们给你的一个`Products.zip`里面`*.listenkey`文件
 
-3. 点击“新建项目”按钮，按照引导的选择对应的`~/Desktop/WNXHuntForCity/WNXHuntForCity.xcworkspace`文件，选对应的注册码，然后选主应用的target选主应用的名字，比如`WNXHuntForCity`，点击完成后创建项目成功
+3. 点击“新建项目”按钮，按照引导的选择对应的`~/Desktop/Runner/Runner.xcworkspace`文件，选对应的注册码，然后选主应用的target选主应用的名字，比如`Runner`，点击完成后创建项目成功
 
-4. 点击当前项目的最右边一个按钮，进入`WNXHuntForCity` 这个项目，等待完成工程分析(项目结构都能在界面中正确显示了）
+4. 点击当前项目的最右边一个按钮，进入`Runner` 这个项目，等待完成工程分析(项目结构都能在界面中正确显示了）
 >
-<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-3.png" width="60%">
+<img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-44.png" width="60%">
 >
-```warning
-如果你的项目使用了cocospod，请先执行 `pod update` 或者 'pod install` 然后再来做工程分析，并且确保你的工程可以正常编译
-```
 
 5. 退出当前项目，回到工程列表（关闭当前项目就行了），找到工程设置按钮点进去
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-4.png" width="60%">
 
-6. 第一个选项卡是“依赖文件”，找到`COSDK`那个分组，点` '+' `按钮，依次把`~/WNXHuntForCity/WNXHuntForCity/COSDK`里面3个文件加入进去
+6. 第一个选项卡是“依赖文件”，找到`COSDK`那个分组，点` '+' `按钮，依次把`~/Runner/Runner/COSDK`里面3个文件加入进去
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-5.png" width="90%">
 
-7. 进入【编译设置】选项卡，添加一个`Debug`证书设置，target选择`WNXHuntForCity`，`bundle id`使用您新应用的`bundle id`（注意一定要正确，不然会影响查找本地 `mobile provision file`文件错误)，`certificate `选正确的证书，然后点 mobile provision file 旁边的搜索按钮，可以从本地识别对应的文件） 
+7. 进入【编译设置】选项卡，添加一个`Debug`证书设置，target选择`Runner`，`bundle id`使用您新应用的`bundle id`（注意一定要正确，不然会影响查找本地 `mobile provision file`文件错误)，`certificate `选正确的证书，然后点 mobile provision file 旁边的搜索按钮，可以从本地识别对应的文件） 
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-11.png" width="90%">
 >
@@ -90,11 +89,9 @@ xcode16及以上工程，请确保 `Build Settings` 中的 `Copy Bundle Resource
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-34.png" width="40%">
 
-11. 确保开启了 【COSDK使用动态库】，如果你用了`Podfile`，打开了 `use_frameworks!`，就需要对应打开这个
+11. 在架构里面，只打开ARM64 就可以了，然后点击【开始混淆】
 
-12. 在架构里面，只打开ARM64 就可以了，然后点击【开始混淆】
-
-13. 再次点击【开始混淆】按钮，然后一直等到混淆器提示混淆完成，点击【打开工程】按钮，准备运行应用，会发现 `WNXHuntForCity` 那个下拉框打开后，会多一个target，它的icon上面有一个阻止的标示，选中它，会自动安装应用到手机，就可以开始调试了
+12. 再次点击【开始混淆】按钮，然后一直等到混淆器提示混淆完成，点击【打开工程】按钮，准备运行应用，会发现 `Runner` 那个下拉框打开后，会多一个target，它的icon上面有一个阻止的标示，选中它，会自动安装应用到手机，就可以开始调试了
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-8.png" width="80%">
 >

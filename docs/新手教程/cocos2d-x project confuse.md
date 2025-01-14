@@ -33,6 +33,10 @@ sort: 8
 3. 在`Xcode`的左侧工程视图里面，找到`tests`，右键菜单`Add Files To "cocos2dx-tests"`，选中`cocos/COSDK` 目录
 >
  <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-15.png" width="90%">
+>
+```warning
+xcode16及以上工程，请确保 `Build Settings` 中的 `Copy Bundle Resource` 中加入了 `.dat` 文件
+```
 
 4. 点击`Xcode`中`cocos2d_tests`这个工程文件 找到 TARGETS 里面的 `cpp-tests IOS`，在`Framework Search Paths`里面添加 `"$(SRCROOT)/../cocos/COSDK"`
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-43.png" width="60%">

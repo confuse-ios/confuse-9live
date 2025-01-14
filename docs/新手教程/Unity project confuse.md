@@ -51,6 +51,10 @@ sort: 7
 4. 回到主页面找到点【配置】按钮，把`~/Desktop/TEST-U3D/COSDK` 目录里3个文件添加到依赖配置的`COSDK`分组下 (COSDK.framework名字可能跟截图不一致)
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-5.png" width="90%">
+>
+```warning
+xcode16及以上工程，请确保 `Build Settings` 中的 `Copy Bundle Resource` 中加入了 `.dat` 文件
+```
 
 3. 配置编译设置，添加一个`Debug`签名，Target选择`Unity-iPhone`（如果下拉列表是空的，先进一下工程，等待工程分析结束，再返回配置界面），bundle id输入您新应用的bundle id
 >
