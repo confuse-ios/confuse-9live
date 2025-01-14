@@ -97,7 +97,7 @@ xcode16及以上工程，请确保 `Build Settings` 中的 `Copy Bundle Resource
 
 12. 打开【COSDK自动初始化】，打开后就可以开启运行时的自动修复功能，避免出现一些运行错误（请去掉main.m里面的NSCOSDK_Init()部分）
 
-13. 修改【COSDK自定义名称】为给你的`Products.zip`里面的那个framework的名字(如果给你的是COSDK.framework，可以不填写)
+13. 修改【COSDK自定义名称】为给你的`Products.zip`里面的那个后缀为`.framework`的文件的名字(如果给你的是`COSDK.framework`，可以不填写，比如给你的是`NIHSDK.framework`, 请填写`NIHSDK`)
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-34.png" width="40%">
 

@@ -85,7 +85,7 @@ xcode16及以上工程，请确保 `Build Settings` 中的 `Copy Bundle Resource
 
 9. 打开【COSDK自动初始化】，就能省略在`main`函数里面加入`NSCOSDKInit()` 的部分，因为 swift 也找不到`main`函数定义
 
-10. 修改【COSDK自定义名称】为给你的`Products.zip`里面的那个framework的名字(如果给你的是COSDK.framework，可以不填写)
+10. 修改【COSDK自定义名称】为给你的`Products.zip`里面的那个后缀为`.framework`的文件的名字(如果给你的是`COSDK.framework`，可以不填写，比如给你的是`NIHSDK.framework`, 请填写`NIHSDK`)
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-34.png" width="40%">
 
