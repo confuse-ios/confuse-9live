@@ -13,10 +13,5 @@ sort: 14
 >
 
 3. pod install 提示 [Xcodeproj] Unable to find compatibility version string for object version `70`. 错误?
+> 点击【开始混淆】按钮弹出的【运行设置】里面，有个 修复Pod-Bug(70)的开关，打开它就行了
 >
-```
-步骤1.点[重制]按钮
-步骤2.找到出错的xcodeproj文件，比如说 Runner.xcodeproj 右键菜单选择[显示包内容]
-步骤3.文本编辑器打开 project.pbxproj  把 objectVersion = 70; 改成 objectVersion = 54;
-步骤4.再点[开始混淆]就解决了
-```
