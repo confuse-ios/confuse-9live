@@ -92,7 +92,7 @@ xcode16及以上工程，请确保 `Build Settings` 中的 `Copy Bundle Resource
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-26.png" width="90%">
 
-6. 打开 【调试模式】 选项，打开【COSDK自动初始化】
+6. 弹出运行设置面板后，默认编译模式是【Debug】确保打开【COSDK自动初始化】
 
 7. 修改【COSDK自定义名称】为给你的`Products.zip`里面的那个后缀为`.framework`的文件的名字(如果给你的是`COSDK.framework`，可以不填写，比如给你的是`NIHSDK.framework`, 请填写`NIHSDK`)
 >

@@ -86,28 +86,23 @@ xcode16及以上工程，请确保 `Build Settings` 中的 `Copy Bundle Resource
 这一部分是可选的
 ```
 
-
-9. 点击【开始混淆】按钮，会弹出运行设置，默认【调试模式】是打开的
+9. 点击【开始混淆】按钮
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-26.png" width="90%">
 
-10. 确保【swift混编】是关闭的，没有用到混编就不需要了
+10. 弹出运行设置面板后，默认编译模式是【Debug】确保打开【COSDK自动初始化】
 
-11. 关闭【COSDK使用动态库】，只有你的`Podfile`里面用了`use_frameworks!` 才需要打开
-
-12. 打开【COSDK自动初始化】，打开后就可以开启运行时的自动修复功能，避免出现一些运行错误（请去掉main.m里面的NSCOSDK_Init()部分）
-
-13. 修改【COSDK自定义名称】为给你的`Products.zip`里面的那个后缀为`.framework`的文件的名字(如果给你的是`COSDK.framework`，可以不填写，比如给你的是`NIHSDK.framework`, 请填写`NIHSDK`)
+11. 修改【COSDK自定义名称】为给你的`Products.zip`里面的那个后缀为`.framework`的文件的名字(如果给你的是`COSDK.framework`，可以不填写，比如给你的是`NIHSDK.framework`, 请填写`NIHSDK`)
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-34.png" width="40%">
 
-14. 确保只打开【ARM64】指令，之后出正式版本才需要加上ARMv7，其他几种指令集的也没有太多必要了
+12. 确保只打开【ARM64】指令，之后出正式版本才需要加上ARMv7，其他几种指令集的也没有太多必要了
 
-15. 在预处理结束后，你应该会看到如下这张截图，点击解决问题，程序会挂起，这是你会发现警告消息里面，多了一堆警告，并且常量识别里面多了一堆常量，这些警告都是预处理阶段【工程配置】-【常量识别】里面配置的一些识别函数调用时引起，检测到了不确定的变量值，目前来说只有keyvalue需要你特别关注一下，常量识别的作用是帮助你识别一些文件名/图片名/ObjC类型名/ObjC协议名/ObjC方法名称，降低执行文件中的常量相似度，当然即使某些地方用了变量拼接这些名词，也无所谓，在应用执行时`COSDK`会修复这些名称错误
+13. 在预处理结束后，你应该会看到如下这张截图，点击解决问题，程序会挂起，这是你会发现警告消息里面，多了一堆警告，并且常量识别里面多了一堆常量，这些警告都是预处理阶段【工程配置】-【常量识别】里面配置的一些识别函数调用时引起，检测到了不确定的变量值，目前来说只有keyvalue需要你特别关注一下，常量识别的作用是帮助你识别一些文件名/图片名/ObjC类型名/ObjC协议名/ObjC方法名称，降低执行文件中的常量相似度，当然即使某些地方用了变量拼接这些名词，也无所谓，在应用执行时`COSDK`会修复这些名称错误
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-7.png" width="60%">
 
-16. 点击【开始混淆】混淆，然后一直等到混淆器提示混淆完成，点击【打开工程】按钮，准备运行应用，会发现 `WNXHuntForCity`那个下拉框打开后，会多一个target，它的icon上面有一个阻止的标示，选中它，会自动安装应用到手机，就可以开始调试了
+14. 点击【开始混淆】混淆，然后一直等到混淆器提示混淆完成，点击【打开工程】按钮，准备运行应用，会发现 `WNXHuntForCity`那个下拉框打开后，会多一个target，它的icon上面有一个阻止的标示，选中它，会自动安装应用到手机，就可以开始调试了
 >
 <img src="https://outtable.github.io/confuse-9live/assets/images/snapshots/snapshot-8.png" width="80%">
 >

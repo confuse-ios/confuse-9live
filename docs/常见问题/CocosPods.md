@@ -13,5 +13,9 @@ sort: 14
 >
 
 3. pod install 提示 [Xcodeproj] Unable to find compatibility version string for object version `70`. 错误?
-> 点击【开始混淆】按钮弹出的【运行设置】里面，有个 修复Pod-Bug(70)的开关，打开它就行了
+> 点击【开始混淆】按钮弹出的【运行设置】里面，有个 修复Pod-Bug(70)的开关，打开它就行了(注意：打开后工程文件版本会被改成54，如果想自定义版本，请参考下一条信息)
 >
+
+4. 如何避免xcode object version 版本高于54，打开工程后引起xcode崩溃?
+> 在你的Podfile 文件所属的目录下，创建一个 crab.configs.txt 文件，在里面加入一条信息 chatroom.xcodeproj@objectVersion=56(注意:这里面的 chatroom.xcodeproj 就是需要指定版本号的工程文件)
+> 
